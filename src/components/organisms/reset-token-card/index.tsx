@@ -60,7 +60,7 @@ const ResetTokenCard: React.FC<ResetTokenCardProps> = ({ goBack }) => {
         {!mailSent ? (
           <>
             <SigninInput
-              placeholder="lebron@james.com..."
+              placeholder="user@example.com..."
               {...register('email', { required: true })}
               className="mb-0 mt-xlarge" />
             {unrecognizedEmail && (
@@ -91,7 +91,7 @@ const ResetTokenCard: React.FC<ResetTokenCardProps> = ({ goBack }) => {
             </div>
             <div className="flex flex-col gap-y-2xsmall">
               <span className="inter-small-semibold">
-                Succesfully sent you an email
+                Successfully sent you an email
               </span>
               <span className="inter-small-regular">
                 We've sent you an email which you can use to reset your
